@@ -9,7 +9,7 @@ export default class Hero extends Component {
         <div className="hero-slides">
           <div
             className="slide"
-            style={{ backgroundImage: `url(${'/img/placeholders/1200x800.png'})` }}
+            style={{ backgroundImage: `url(${'/img/hero-background-1.jpg'})` }}
           />
         </div>
         <svg
@@ -45,12 +45,12 @@ export default class Hero extends Component {
           <div className="right">
             <ul className="connect">
               <li>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/matthew-grose-98753b26/">
                   <FontAwesomeIcon icon={['fab', 'linkedin-in']} style={{ color: 'white' }} />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://github.com/tiny-dancer/">
                   <FontAwesomeIcon icon={['fab', 'github']} style={{ color: 'white' }} />
                 </a>
               </li>
