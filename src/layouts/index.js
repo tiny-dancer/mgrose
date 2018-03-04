@@ -19,7 +19,7 @@ fontawesome.library.add(brands);
 
 const TemplateWrapper = ({ children }) => (
   <div className="is-full-height">
-    <Helmet title="Home | Gatsby + Netlify CMS" />
+    <Helmet title="Home | MG" />
     <Navbar />
     {children()}
   </div>
