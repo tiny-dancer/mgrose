@@ -1,41 +1,54 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React, { Component } from 'react';
+import Link from 'gatsby-link';
 
-import github from '../img/github-icon.svg'
-import logo from '../img/logo.svg'
+import github from '../img/github-icon.svg';
+import logo from '../img/logo.svg';
 
-const Navbar = () => (
-  <nav className="navbar is-transparent">
-    <div className="container">
-      <div className="navbar-brand">
-        <Link to="/" className="navbar-item">
-          <figure className="image">
-            <img src={logo} alt="Kaldi" style={{ width: '88px' }} />
-          </figure>
-        </Link>
-      </div>
-      <div className="navbar-start">
-        <Link className="navbar-item" to="/about">
-          About
-        </Link>
-        <Link className="navbar-item" to="/products">
-          Products
-        </Link>
-      </div>
-      <div className="navbar-end">
-        <a
-          className="navbar-item"
-          href="https://github.com/AustinGreen/gatsby-netlify-cms-boilerplate"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <span className="icon">
-            <img src={github} alt="Github" />
-          </span>
-        </a>
-      </div>
-    </div>
-  </nav>
-)
+export default class Navbar extends Component {
+  constructor(props) {
+    super(props);
 
-export default Navbar
+    this.state = {
+      isOpen: false
+    };
+  }
+
+  openMenu = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  };
+
+  render() {
+    return (
+      <nav className={this.state.isOpen ? 'opened' : ''}>
+        <button className="open-menu" onClick={this.openMenu}>
+          Menu
+        </button>
+        <ul className={this.state.isOpen ? 'menu show-menu-items' : 'menu'}>
+          <li>
+            <a href="#about-me">About Me</a>
+          </li>
+          <li>
+            <a href="#experience-education">Experience & Education</a>
+          </li>
+          <li>
+            <a href="#skills-knowledge">Skills & Knowledge</a>
+          </li>
+          <li>
+            <a href="#portfolio">Portfolio</a>
+          </li>
+          <li>
+            <a href="#design-process">Design Process</a>
+          </li>
+          <li>
+            <a href="#pricing">Pricing</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    );
+  }
+}

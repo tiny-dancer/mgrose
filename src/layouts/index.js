@@ -1,20 +1,32 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-import Navbar from '../components/Navbar'
-import './all.sass'
+import Navbar from '../components/Navbar';
+import '../fonts/merriweather.css';
+import '../fonts/linearicons/web-font/style.css';
+import '../fonts/et-line-font/style.css';
+import './bootstrap.min.css';
+import './animate.css';
+import './owl.carousel.min.css';
+import './owl.theme.default.min.css';
+import './jordan.less';
+import './all.sass';
+import fontawesome from '@fortawesome/fontawesome';
+import brands from '@fortawesome/fontawesome-free-brands';
+
+fontawesome.library.add(brands);
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <div className="is-full-height">
     <Helmet title="Home | Gatsby + Netlify CMS" />
     <Navbar />
-    <div>{children()}</div>
+    {children()}
   </div>
-)
+);
 
 TemplateWrapper.propTypes = {
-  children: PropTypes.func,
-}
+  children: PropTypes.func
+};
 
-export default TemplateWrapper
+export default TemplateWrapper;
