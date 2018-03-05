@@ -1,13 +1,25 @@
 import React from 'react';
 import Link from 'gatsby-link';
 import Hero from '../components/Hero';
+import Skills from '../components/Skills';
+import About from '../components/About';
 
 export default class IndexPage extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
-    return <Hero />;
+    return (
+      <div className="is-full-height">
+        <Hero />
+        <About />
+        {(() => {
+          if (process.env.SKILLS) {
+            return <Skills />;
+          }
+        })()}
+      </div>
+    );
   }
 }
 

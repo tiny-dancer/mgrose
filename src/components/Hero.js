@@ -1,8 +1,14 @@
 import React, { Component } from 'react';
 import TypistCycle from './TypistCycle';
 import FontAwesomeIcon from '@fortawesome/react-fontawesome';
+import * as Scroll from 'react-scroll';
 
 export default class Hero extends Component {
+  scroll = () => {
+    Scroll.animateScroll.scrollTo(window.innerHeight, {
+      smooth: true
+    });
+  };
   render() {
     return (
       <section id="hero" className="section-hero">
@@ -39,7 +45,7 @@ export default class Hero extends Component {
             {(() => {
               if (process.env.DOWN_ARROWS) {
                 return (
-                  <div className="scroll-down-indicator ">
+                  <div className="scroll-down-indicator" onClick={this.scroll}>
                     <div className="down-arrow play" />
                     <div className="down-arrow play" />
                     <div className="down-arrow play" />
