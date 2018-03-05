@@ -36,11 +36,17 @@ export default class Hero extends Component {
         />
         <div className="btm">
           <div className="left">
-            <div className="scroll-down-indicator ">
-              <div className="down-arrow play" />
-              <div className="down-arrow play" />
-              <div className="down-arrow play" />
-            </div>
+            {(() => {
+              if (process.env.DOWN_ARROWS) {
+                return (
+                  <div className="scroll-down-indicator ">
+                    <div className="down-arrow play" />
+                    <div className="down-arrow play" />
+                    <div className="down-arrow play" />
+                  </div>
+                );
+              }
+            })()}
           </div>
           <div className="right">
             <ul className="connect">

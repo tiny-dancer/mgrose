@@ -20,7 +20,11 @@ fontawesome.library.add(brands);
 const TemplateWrapper = ({ children }) => (
   <div className="is-full-height">
     <Helmet title="Home | MG" />
-    <Navbar />
+    {(() => {
+      if (process.env.NAV) {
+        return <Navbar />;
+      }
+    })()}
     {children()}
   </div>
 );
