@@ -24,7 +24,7 @@ export default class About extends Component {
               <li>
                 <span class="field-title">Email</span>
                 <span class="field-content">
-                  <a href={`mailto:${'mail@mgr.se'}`}>mg@mgro.se</a>
+                  <a href={`mailto:${'mg@mgro.se'}`}>mg@mgro.se</a>
                 </span>
               </li>
               <li>
