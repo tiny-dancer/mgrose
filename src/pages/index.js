@@ -3,6 +3,7 @@ import Link from 'gatsby-link';
 import Hero from '../components/Hero';
 import Skills from '../components/Skills';
 import About from '../components/About';
+import ExperienceTimeline from '../components/ExperienceTimeline';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -16,6 +17,11 @@ export default class IndexPage extends React.Component {
         {(() => {
           if (process.env.SKILLS) {
             return <Skills />;
+          }
+        })()}
+        {(() => {
+          if (process.env.EXPERIENCE) {
+            return <ExperienceTimeline />;
           }
         })()}
       </div>
