@@ -38,50 +38,43 @@ export default class componentName extends Component {
     this.state = {
       items: [
         {
-          title: 'UI / UX Designer',
-          subtitle: 'Amazing Design',
-          dateRange: 'Aug 2007 - Now',
+          title: 'Software Engineering Manager, Architect',
+          subtitle: 'Optum, UnitedHealth Group',
+          dateRange: 'Feb 2016 - Now',
           icon: suitcaseSvg,
           content:
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta exercitationem nam perferendis' +
-            'tempora eius repellat expedita numquam, beatae eaque nihil? Aliquam architecto voluptatum' +
-            'provident animi, excepturi fugit ut! Impedit, eum!'
+            'Hands on manager and architect for 15 engineers in 3 cross-functional teams involving development, quality, devops, and site reliability.\nResponsible for the full software lifecycle and production quality of Optum’s portal and developer enablement platform with 1 million users.'
         },
         {
-          title: 'Front-End Web Developer',
-          subtitle: 'AudioJungle',
-          dateRange: 'Aug 2007 - Jan 2010',
+          title: 'Sr. Full Stack Software Engineer',
+          subtitle: 'Optum, UnitedHealth Group',
+          dateRange: 'Sept 2015 - Feb 2016',
           icon: suitcaseSvg,
           content:
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error atque debitis tempora soluta, modi voluptatum sunt optio, ut quidem quam dolore. Unde minus quasi consequuntur consequatur, tempore repudiandae aperiam?'
+            'Leading code contributor, reviewer and architect utilizing a spring boot, mysql, angular 1 and jenkins stack.\nLed angular 1 code refactor to John Papa’s style guide.\nLed spring boot refactor to utilize dependency injection patterns, mocked unit testing and a Repo/Service layered architecture.\nIntroduced pull request based development and automated testing utilizing Jenkins 1 Delivery Pipeline plugin as a full CI/CD pipeline.'
         },
         {
-          title: 'Professional Diploma in Graphic Design',
-          subtitle: 'Beautiful College',
-          dateRange: 'Sep 2012 - Aug 2013',
-          icon: capSvg
+          title: 'Development Team Lead',
+          subtitle: 'Life Time Fitness',
+          dateRange: 'Oct 2014 - Sept 2015',
+          icon: suitcaseSvg,
+          content:
+            'Leading code contributor, reviewer and scrum leader on a .NET Web API, MS SQL, Angular 1 and Atlassian team.\nLed redesign to an “API First” Web API + Angular stack, also enabling other teams to consume our data.\nTransitioned to pull requests, Git Flow and automated testing.\nLearned CI best practices and led implementation for several teams, including mobile Xamarin team utilizing Atlassian Bamboo.'
         },
         {
-          title: 'Master of Engineering in Computer Engineering',
-          subtitle: 'Fantastic University',
-          dateRange: 'Sep 2010 - Aug 2012',
+          title: 'Full Stack Developer',
+          subtitle: 'Life Time Fitness',
+          dateRange: 'Jun 2013 - Oct 2014',
+          icon: suitcaseSvg,
+          content:
+            'Quickly ramped up on each tier of a 3 tier stack utilizing MS SQL, .NET MVC, and JQuery.\nLed Angular 1 replacement of JQuery.'
+        },
+        {
+          title: 'B.B.A in Management Information Systems & Finance',
+          subtitle: 'University of Minnesota, Dulth',
+          dateRange: 'Sept 2008 - May 2013',
           icon: capSvg,
-          content: 'Thesis: Nulla, Omnis Vitae Illum Molestiae Rem\nGPA: 4.0'
-        },
-        {
-          title: 'Back-End Web Developer',
-          subtitle: 'PhotoDune',
-          dateRange: 'Aug 2007 - Jan 2010',
-          icon: suitcaseSvg,
-          content:
-            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error atque debitis tempora soluta, modi voluptatum sunt optio, ut quidem quam dolore. Unde minus quasi consequuntur consequatur, tempore repudiandae aperiam?'
-        },
-        {
-          title: 'Bachelor of Engineering in Computer Science',
-          subtitle: 'Incredible University',
-          dateRange: 'Aug 2005 - Aug 2009',
-          icon: capSvg,
-          content: 'First-class honors\nGPA: 4.33'
+          content: 'Minor in Accounting'
         }
       ]
     };
