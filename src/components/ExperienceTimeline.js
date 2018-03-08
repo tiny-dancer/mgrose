@@ -93,7 +93,9 @@ export default class componentName extends Component {
         <h2>Experience &amp; Education</h2>
         <ul className="timeline">
           {this.state.items.map((item, index) => {
-            return <TimelineItem {...item} align={index % 2 == 0 ? 'right' : 'left'} />;
+            return (
+              <TimelineItem key={item.title} {...item} align={index % 2 == 0 ? 'right' : 'left'} />
+            );
           })}
         </ul>
       </section>
