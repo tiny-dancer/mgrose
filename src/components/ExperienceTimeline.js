@@ -3,31 +3,62 @@ import suitcaseSvg from '../img/suitcase.svg';
 import capSvg from '../img/cap.svg';
 import ScrollAnimation from 'react-animate-on-scroll';
 
+var TimelineItem = props => {
+  var animateIn = 'fadeIn';
+  animateIn += props.align === 'right' ? 'Left' : 'Right';
+
+  return (
+    <li>
+      <div className="icon">
+        <img src={props.icon} alt />
+      </div>
+
+      <div className="animation-chain overflow-hidden">
+        <ScrollAnimation animateIn={animateIn} animateOnce={true}>
+          <h3>{props.title}</h3>
+          <h4>{props.subtitle}</h4>
+          <div className="date">{props.dateRange}</div>
+        </ScrollAnimation>
+      </div>
+
+      <p>{props.children}</p>
+    </li>
+  );
+};
+
 export default class componentName extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      items: [
+        {
+          title: 'UI / UX Designer',
+          subtitle: 'Amazing Design',
+          dateRange: 'Aug 2007 - Now',
+          align: 'right',
+          icon: suitcaseSvg
+        }
+      ]
+    };
+  }
+
   render() {
     return (
       <section id="experience-education" className="section-experience-education bgPrimaryColor">
         <h2>Experience &amp; Education</h2>
         <ul className="timeline">
-          <li>
-            <div className="icon">
-              <img src={suitcaseSvg} alt />
-            </div>
-
-            <div className="animation-chain overflow-hidden">
-              <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
-                <h3>UI / UX Designer</h3>
-                <h4>Amazing Design</h4>
-                <div className="date">Aug 2007 - Now</div>
-              </ScrollAnimation>
-            </div>
-
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta exercitationem nam
-              perferendis tempora eius repellat expedita numquam, beatae eaque nihil? Aliquam
-              architecto voluptatum provident animi, excepturi fugit ut! Impedit, eum!
-            </p>
-          </li>
+          items
+          <TimelineItem
+            title="UI / UX Designer"
+            subtitle="Amazing Design"
+            dateRange="Aug 2007 - Now"
+            align="right"
+            icon={suitcaseSvg}
+          >
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta exercitationem nam
+            perferendis tempora eius repellat expedita numquam, beatae eaque nihil? Aliquam
+            architecto voluptatum provident animi, excepturi fugit ut! Impedit, eum!
+          </TimelineItem>
           <li>
             <div className="icon">
               <img src={suitcaseSvg} alt />
