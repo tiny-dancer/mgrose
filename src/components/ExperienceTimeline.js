@@ -21,7 +21,13 @@ var TimelineItem = props => {
         </ScrollAnimation>
       </div>
 
-      <p>{props.children}</p>
+      <p>
+        {props.children ||
+          (props.content &&
+            props.content.split('\n').map(i => {
+              return <div>{i}</div>;
+            }))}
+      </p>
     </li>
   );
 };
@@ -35,8 +41,47 @@ export default class componentName extends Component {
           title: 'UI / UX Designer',
           subtitle: 'Amazing Design',
           dateRange: 'Aug 2007 - Now',
-          align: 'right',
-          icon: suitcaseSvg
+          icon: suitcaseSvg,
+          content:
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta exercitationem nam perferendis' +
+            'tempora eius repellat expedita numquam, beatae eaque nihil? Aliquam architecto voluptatum' +
+            'provident animi, excepturi fugit ut! Impedit, eum!'
+        },
+        {
+          title: 'Front-End Web Developer',
+          subtitle: 'AudioJungle',
+          dateRange: 'Aug 2007 - Jan 2010',
+          icon: suitcaseSvg,
+          content:
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error atque debitis tempora soluta, modi voluptatum sunt optio, ut quidem quam dolore. Unde minus quasi consequuntur consequatur, tempore repudiandae aperiam?'
+        },
+        {
+          title: 'Professional Diploma in Graphic Design',
+          subtitle: 'Beautiful College',
+          dateRange: 'Sep 2012 - Aug 2013',
+          icon: capSvg
+        },
+        {
+          title: 'Master of Engineering in Computer Engineering',
+          subtitle: 'Fantastic University',
+          dateRange: 'Sep 2010 - Aug 2012',
+          icon: capSvg,
+          content: 'Thesis: Nulla, Omnis Vitae Illum Molestiae Rem\nGPA: 4.0'
+        },
+        {
+          title: 'Back-End Web Developer',
+          subtitle: 'PhotoDune',
+          dateRange: 'Aug 2007 - Jan 2010',
+          icon: suitcaseSvg,
+          content:
+            'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error atque debitis tempora soluta, modi voluptatum sunt optio, ut quidem quam dolore. Unde minus quasi consequuntur consequatur, tempore repudiandae aperiam?'
+        },
+        {
+          title: 'Bachelor of Engineering in Computer Science',
+          subtitle: 'Incredible University',
+          dateRange: 'Aug 2005 - Aug 2009',
+          icon: capSvg,
+          content: 'First-class honors\nGPA: 4.33'
         }
       ]
     };
@@ -47,94 +92,9 @@ export default class componentName extends Component {
       <section id="experience-education" className="section-experience-education bgPrimaryColor">
         <h2>Experience &amp; Education</h2>
         <ul className="timeline">
-          items
-          <TimelineItem
-            title="UI / UX Designer"
-            subtitle="Amazing Design"
-            dateRange="Aug 2007 - Now"
-            align="right"
-            icon={suitcaseSvg}
-          >
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta exercitationem nam
-            perferendis tempora eius repellat expedita numquam, beatae eaque nihil? Aliquam
-            architecto voluptatum provident animi, excepturi fugit ut! Impedit, eum!
-          </TimelineItem>
-          <li>
-            <div className="icon">
-              <img src={suitcaseSvg} alt />
-            </div>
-            <div className="animation-chain overflow-hidden">
-              <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
-                <h3>Front-End Web Developer</h3>
-                <h4>AudioJungle</h4>
-                <div className="date">Aug 2007 - Jan 2010</div>
-              </ScrollAnimation>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error atque debitis
-              tempora soluta, modi voluptatum sunt optio, ut quidem quam dolore. Unde minus quasi
-              consequuntur consequatur, tempore repudiandae aperiam?
-            </p>
-          </li>
-          <li>
-            <div className="icon">
-              <img src={capSvg} alt />
-            </div>
-            <div className="animation-chain overflow-hidden">
-              <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
-                <h3>Professional Diploma in Graphic Design </h3>
-                <h4>Beautiful College</h4>
-                <div className="date">Sep 2012 - Aug 2013</div>
-              </ScrollAnimation>
-            </div>
-          </li>
-          <li>
-            <div className="icon">
-              <img src={capSvg} alt />
-            </div>
-            <div className="animation-chain overflow-hidden">
-              <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
-                <h3>Master of Engineering in Computer Engineering</h3>
-                <h4>Fantastic University</h4>
-                <div className="date">Sep 2010 - Aug 2012</div>
-              </ScrollAnimation>
-            </div>
-            <p>
-              Thesis: Nulla, Omnis Vitae Illum Molestiae Rem<br />GPA: 4.0
-            </p>
-          </li>
-          <li>
-            <div className="icon">
-              <img src={suitcaseSvg} alt />
-            </div>
-            <div className="animation-chain overflow-hidden">
-              <ScrollAnimation animateIn="fadeInLeft" animateOnce={true}>
-                <h3>Back-End Web Developer</h3>
-                <h4>PhotoDune</h4>
-                <div className="date">Aug 2007 - Jan 2010</div>
-              </ScrollAnimation>
-            </div>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id error atque debitis
-              tempora soluta, modi voluptatum sunt optio, ut quidem quam dolore. Unde minus quasi
-              consequuntur consequatur, tempore repudiandae aperiam?
-            </p>
-          </li>
-          <li>
-            <div className="icon">
-              <img src={capSvg} alt />
-            </div>
-            <div className="animation-chain overflow-hidden">
-              <ScrollAnimation animateIn="fadeInRight" animateOnce={true}>
-                <h3>Bachelor of Engineering in Computer Science</h3>
-                <h4>Incredible University</h4>
-                <div className="date">Aug 2005 - Aug 2009</div>
-              </ScrollAnimation>
-            </div>
-            <p>
-              First-class honors<br />GPA: 4.33
-            </p>
-          </li>
+          {this.state.items.map((item, index) => {
+            return <TimelineItem {...item} align={index % 2 == 0 ? 'right' : 'left'} />;
+          })}
         </ul>
       </section>
     );
