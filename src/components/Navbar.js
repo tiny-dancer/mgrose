@@ -30,12 +30,12 @@ export default class Navbar extends Component {
             <a href="#about-me">About Me</a>
           </li>
           <li>
-            <a href="#experience-education">Experience & Education</a>
-          </li>
-          <li>
             <a href="#skills-knowledge">Skills & Knowledge</a>
           </li>
           <li>
+            <a href="#experience-education">Experience & Education</a>
+          </li>
+          {/* <li>
             <a href="#portfolio">Portfolio</a>
           </li>
           <li>
@@ -46,7 +46,7 @@ export default class Navbar extends Component {
           </li>
           <li>
             <a href="#contact">Contact</a>
-          </li>
+          </li> */}
         </ul>
       </nav>
     );
