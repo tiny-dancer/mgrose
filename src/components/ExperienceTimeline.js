@@ -25,7 +25,7 @@ var TimelineItem = props => {
         {props.children ||
           (props.content &&
             props.content.split('\n').map(i => {
-              return <div>{i}</div>;
+              return <p>{i}</p>;
             }))}
       </p>
     </li>
@@ -43,7 +43,7 @@ export default class componentName extends Component {
           dateRange: 'Feb 2016 - Now',
           icon: suitcaseSvg,
           content:
-            'Hands on manager and architect for 15 engineers in 3 cross-functional teams involving development, quality, devops, and site reliability.\nResponsible for the full software lifecycle and production quality of Optum’s portal and developer enablement platform with 1 million users.'
+            'Hands on manager and architect for 15 engineers in 3 cross-functional teams involving development, quality, devops, and site reliability.\nResponsible for the full software lifecycle and production quality of Optum’s portal and developer enablement platform with 1 million users.\nEvolved devops and site reliability maturity within the teams.  Production incidents decreased 150%, performance improved and user story cycle time was reduced from over 1 month to 5 days.\nLed migration from a monolithic single datacenter VM architecture to a distributed, service oriented multi-datacenter architecture utilizing spring boot, netflix oss, kubernetes, prometheus and AWS Route 53.\nFocused on front-end code reusability and visual consistency through a team created component library utilizing react, styleguidist and storybook.'
         },
         {
           title: 'Sr. Full Stack Software Engineer',
