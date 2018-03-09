@@ -35,13 +35,14 @@ export default class About extends Component {
           </ScrollAnimation>
           <div class="intro">
             <p>
-              Long term success is achieved by focusing on the growth of oneself and those around
-              them.
+              Effective leaders ensure the balance of investing in invidual and team growth to
+              acheving desirable results. Stephen Covey's definition of effectiveness, "the balance
+              of obtaining desirable results with caring for that which produces those results".
             </p>
             <p>
-              Sustainably deliverying innovative software and value to users is achieved by the
-              "evolving circle" of pairing together software craftsmanship, continuous delivery and
-              lean product management.
+              Effective engineers practice the "evolving circle" of pairing together software
+              craftsmanship, continuous delivery and lean product management to sustainably deliver
+              innovative software and value to users.
             </p>
           </div>
         </div>
