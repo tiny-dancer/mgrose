@@ -9,8 +9,6 @@ import '../fonts/et-line-font/style.css';
 import 'linearicons';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'animate.css/animate.min.css';
-import './owl.carousel.min.css';
-import './owl.theme.default.min.css';
 import './jordan.less';
 import './all.sass';
 import fontawesome from '@fortawesome/fontawesome';
