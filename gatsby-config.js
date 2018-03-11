@@ -37,7 +37,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-favicon`,
       options: {
-        logo: './static/img/mg2-blue.png',
+        logo: './static/img/mg-black.png',
         injectHTML: true,
         icons: {
           favicons: true
