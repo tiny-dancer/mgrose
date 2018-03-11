@@ -13,7 +13,7 @@ export default class IndexPage extends React.Component {
 
     return (
       <div className="is-full-height">
-        <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+        <form name="contact" netlify="true" netlify-honeypot="bot-field" hidden>
           <input type="text" name="name" />
           <input type="email" name="email" />
           <input type="text" name="title" />
