@@ -4,6 +4,7 @@ import Hero from '../components/Hero';
 import Skills from '../components/Skills';
 import About from '../components/About';
 import ExperienceTimeline from '../components/ExperienceTimeline';
+import Contact from '../components/Contact';
 
 export default class IndexPage extends React.Component {
   render() {
@@ -14,16 +15,9 @@ export default class IndexPage extends React.Component {
       <div className="is-full-height">
         <Hero />
         <About />
-        {(() => {
-          if (process.env.SKILLS) {
-            return <Skills />;
-          }
-        })()}
-        {(() => {
-          if (process.env.EXPERIENCE) {
-            return <ExperienceTimeline />;
-          }
-        })()}
+        <Skills />
+        <ExperienceTimeline />
+        <Contact />
       </div>
     );
   }

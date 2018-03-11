@@ -43,10 +43,10 @@ export default class Navbar extends Component {
           </li>
           <li>
             <a href="#pricing">Pricing</a>
-          </li>
+          </li>*/}
           <li>
             <a href="#contact">Contact</a>
-          </li> */}
+          </li>
         </ul>
       </nav>
     );

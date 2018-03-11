@@ -10,7 +10,7 @@ var TimelineItem = props => {
   return (
     <li>
       <div className="icon">
-        <img src={props.icon} alt />
+        <img src={props.icon} alt="" />
       </div>
 
       <div className="animation-chain overflow-hidden">
@@ -21,13 +21,13 @@ var TimelineItem = props => {
         </ScrollAnimation>
       </div>
 
-      <p>
+      <div>
         {props.children ||
           (props.content &&
             props.content.split('\n').map(i => {
               return <p>{i}</p>;
             }))}
-      </p>
+      </div>
     </li>
   );
 };

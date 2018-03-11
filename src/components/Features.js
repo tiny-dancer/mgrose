@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 
 const FeatureGrid = ({ gridItems }) => (
   <div className="columns is-multiline">
@@ -6,13 +6,13 @@ const FeatureGrid = ({ gridItems }) => (
       <div key={item.image} className="column is-6">
         <section className="section">
           <p className="has-text-centered">
-            <img alt="" src={item.image} />
+            <img src={item.image} />
           </p>
           <p>{item.text}</p>
         </section>
       </div>
     ))}
   </div>
-)
+);
 
-export default FeatureGrid
+export default FeatureGrid;

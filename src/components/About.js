@@ -4,36 +4,38 @@ import ScrollAnimation from 'react-animate-on-scroll';
 export default class About extends Component {
   render() {
     return (
-      <section id="about-me" class="section-about-me flex-responsive">
-        <svg class="triangle" viewBox="0 0 100 100" preserveAspectRatio="xMaxYMin meet">
+      <section id="about-me" className="section-about-me flex-responsive">
+        <svg className="triangle" viewBox="0 0 100 100" preserveAspectRatio="xMaxYMin meet">
           <path d="M0 0 L100 0 L100 100 Z" />
         </svg>
-        <div class="profile-pic">
+        <div className="profile-pic">
           <div
-            class="photo-container"
-            style={{ backgroundImage: `url(${'/img/talking-on-stage-github-crop.jpg'}` }}
+            className="photo-container"
+            style={{
+              backgroundImage: `url(${'/img/talking-on-stage-github-crop.jpg'}`
+            }}
           />
         </div>
-        <div class="details">
+        <div className="details">
           <ScrollAnimation animateIn="fadeInUp" animateOnce={true}>
-            <ul class="animation-chain">
+            <ul className="animation-chain">
               <li>
-                <span class="field-title">Name</span>
-                <span class="field-content">Matthew Grose</span>
+                <span className="field-title">Name</span>
+                <span className="field-content">Matthew Grose</span>
               </li>
               <li>
-                <span class="field-title">Email</span>
-                <span class="field-content">
+                <span className="field-title">Email</span>
+                <span className="field-content">
                   <a href={`mailto:${'mg@mgro.se'}`}>mg@mgro.se</a>
                 </span>
               </li>
               <li>
-                <span class="field-title">Location</span>
-                <span class="field-content">Minneapolis, MN USA</span>
+                <span className="field-title">Location</span>
+                <span className="field-content">Minneapolis, MN USA</span>
               </li>
             </ul>
           </ScrollAnimation>
-          <div class="intro">
+          <div className="intro">
             <p>
               Effective leaders ensure the balance of investing in invidual and team growth to
               acheving desirable results. Stephen Covey's definition of effectiveness, "the balance
