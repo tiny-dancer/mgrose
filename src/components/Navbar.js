@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 
-import github from '../img/github-icon.svg';
-import logo from '../img/logo.svg';
-
 export default class Navbar extends Component {
   constructor(props) {
     super(props);

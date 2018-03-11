@@ -33,6 +33,16 @@ module.exports = {
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`
       }
+    },
+    {
+      resolve: `gatsby-plugin-favicon`,
+      options: {
+        logo: './static/img/mg2-blue.png',
+        injectHTML: true,
+        icons: {
+          favicons: true
+        }
+      }
     }
   ]
 };
