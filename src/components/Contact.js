@@ -29,7 +29,10 @@ export default class Contact extends Component {
   handleSubmit = e => {
     fetch('/', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      headers: {
+        'Content-Type': 'application/x-www-form-urlencoded',
+        'X-Requested-With': 'XMLHttpRequest'
+      },
       body: encode({ 'form-name': 'contact', ...this.state })
     })
       .then(() => alert('Success!'))
