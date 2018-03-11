@@ -52,7 +52,9 @@ export default class Contact extends Component {
             style={{
               backgroundImage: `url(${`https://maps.googleapis.com/maps/api/staticmap?center=${encodeURIComponent(
                 currentLocation
-              )}&zoom=13&size=1280x1280&maptype=roadmap&key=${process.env.GOOGLE_MAPS_KEY}`}`,
+              )}&zoom=13&size=1280x1280&maptype=roadmap&key=${
+                process.env.GATSBY_GOOGLE_MAPS_KEY
+              }`}`,
               backgroundPosition: 'center center',
               backgroundSize: 'cover'
             }}
