@@ -20,7 +20,7 @@ export default class Contact extends Component {
       name: '',
       email: '',
       title: '',
-      content: ''
+      message: ''
     };
   }
 
