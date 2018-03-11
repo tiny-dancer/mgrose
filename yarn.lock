@@ -5801,6 +5801,10 @@ liftoff@^2.2.0:
     rechoir "^0.6.2"
     resolve "^1.1.7"
 
+linearicons@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/linearicons/-/linearicons-1.0.1.tgz#335198d4b796b3193295dd391ada89b3140c0eb4"
+
 linked-list@0.1.0:
   version "0.1.0"
   resolved "https://registry.yarnpkg.com/linked-list/-/linked-list-0.1.0.tgz#798b0ff97d1b92a4fd08480f55aea4e9d49d37bf"

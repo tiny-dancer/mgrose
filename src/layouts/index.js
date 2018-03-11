@@ -4,8 +4,9 @@ import Helmet from 'react-helmet';
 
 import Navbar from '../components/Navbar';
 import '../fonts/merriweather.css';
-import '../fonts/linearicons/web-font/style.css';
+//import '../fonts/linearicons/web-font/style.css';
 import '../fonts/et-line-font/style.css';
+import 'linearicons';
 import './bootstrap.min.css';
 import 'animate.css/animate.min.css';
 import './owl.carousel.min.css';

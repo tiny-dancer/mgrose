@@ -146,7 +146,6 @@ export default class Contact extends Component {
                   <textarea
                     name="message"
                     id="contact-form-content"
-                    defaultValue={''}
                     value={message}
                     onChange={this.handleChange}
                     className={message ? 'focused' : ''}
