@@ -15,7 +15,7 @@ export default class Hero extends Component {
         <div className="hero-slides">
           <div
             className="slide"
-            style={{ backgroundImage: `url(${'/img/background-workstation-crop.jpg'})` }}
+            style={{ backgroundImage: `url(${'/img/background-workstation-crop-min.jpg'})` }}
           />
         </div>
         <svg
