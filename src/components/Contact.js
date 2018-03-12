@@ -59,7 +59,7 @@ export default class Contact extends Component {
                   currentLocation
                 )}&zoom=13&size=1280x1280&maptype=roadmap&key=${
                   process.env.GATSBY_GOOGLE_MAPS_KEY
-                }`,
+                })`,
               backgroundPosition: 'center center',
               backgroundSize: 'cover'
             }}
