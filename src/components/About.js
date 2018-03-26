@@ -38,7 +38,7 @@ export default class About extends Component {
           <div className="intro">
             <p>
               Effective leaders ensure the balance of investing in invidual and team growth to
-              acheving desirable results. Stephen Covey's definition of effectiveness, "the balance
+              achieving desirable results. Stephen Covey's definition of effectiveness, "the balance
               of obtaining desirable results with caring for that which produces those results".
             </p>
             <p>
