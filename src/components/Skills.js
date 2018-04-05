@@ -69,7 +69,7 @@ export default class Skills extends Component {
                 Jenkins 2, Pipeline as Code<span className="highlight">Advanced</span>
               </li>
               <li>Kubernetes</li>
-              <li>AWS & Terraform</li>
+              <li>AWS</li>
               <li>Prometheus / Grafana</li>
             </ul>
           </div>
