@@ -57,7 +57,7 @@ export default class Hero extends Component {
           <div className="right">
             <ul className="connect">
               <li>
-                <a href="https://www.linkedin.com/in/matthew-grose-98753b26/">
+                <a href="https://www.linkedin.com/in/-mg/">
                   <FontAwesomeIcon icon={['fab', 'linkedin-in']} style={{ color: 'white' }} />
                 </a>
               </li>
