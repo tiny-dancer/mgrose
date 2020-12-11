@@ -184,7 +184,7 @@ export default class Contact extends Component {
               </a>
             </li> */}
             <li>
-              <a href="https://linkedin.com/in/matthew-grose-98753b26/">
+              <a href="https://www.linkedin.com/in/-mg/">
                 <span className="icon-linkedin" />
               </a>
             </li>
