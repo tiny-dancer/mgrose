@@ -20,6 +20,7 @@ See our [official Contentful getting started guide](https://www.contentful.com/d
 
 ### Get the source code and install dependencies.
 
+
 ```
 $ git clone https://github.com/contentful/starter-gatsby-blog.git
 $ npm install
