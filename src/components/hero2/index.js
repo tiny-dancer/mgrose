@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import TypistCycle from '../typist-cycle';
 import * as Scroll from 'react-scroll';
 import { FaLinkedinIn, FaGithub } from 'react-icons/fa';
-import background from '../../img/mg-clouds3.jpg';
+import background from '../../img/mg-clouds4.jpg';
 
 
 export default class Hero extends Component {
