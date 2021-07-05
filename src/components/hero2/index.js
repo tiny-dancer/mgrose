@@ -40,7 +40,7 @@ export default class Hero extends Component {
         </svg>
         <h1 style={{marginBottom: '.3%'}}>Matthew (MG) Grose</h1>
         <TypistCycle
-          content={['Technology Leader', 'Cloud Whisperer', 'DevOps Disruptor', 'Digital Transformationer', 'Improving Quality of Life']}
+          content={['Technology Leader', 'Cloud Whisperer', 'DevOps Disruptor', 'Digital Excellence', 'Improving Quality of Life']}
           numberOfCycles={-1} // loop indefinitely
           segmentDelay={1} // stop for 0.8s at end line
           className="titles"
